@@ -82,4 +82,4 @@ jobs:
           esy release
           cd _release
           npm pack
-          npm i -g ./hello-reason.tgz
+          npm i -g ./hello-reason-0.1.0.tgz
