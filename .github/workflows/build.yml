@@ -83,3 +83,6 @@ jobs:
           cd _release
           npm pack
           npm i -g ./hello-reason-0.1.0.tgz
+          mkdir testing
+          cd testing
+          npx Hello
