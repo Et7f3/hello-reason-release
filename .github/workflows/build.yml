@@ -75,3 +75,11 @@ jobs:
 
       - name: Build docs
         run: esy doc
+
+      - name: release
+        run: |
+          set -eux
+          esy release
+          cd _release
+          npm pack
+          npm i -g ./hello-reason.tgz
