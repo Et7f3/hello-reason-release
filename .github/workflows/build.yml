@@ -78,7 +78,6 @@ jobs:
 
       - name: release
         run: |
-          set -eux
           esy release
           cd _release
           npm pack
